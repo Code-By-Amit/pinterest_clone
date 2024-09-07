@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <link rel="stylesheet" href="stylesheets/feed.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <a href="/profile" class="button">Go to Profile</a>
+    </div>
+
+    <div class="container">
+
+        <% if(post.length <= 0){ %>
+            <div>
+                <h3>No Post Yet</h3>
+            </div>
+         <% } %>   
+
+        <% post.forEach((post)=>{ %>
+
+            <div class="box">
+                    <a href="/postdisplay/<%=post._id%>"><img src="/images/uploads/<%= post.image %>" alt="image"></a>
+                <div class="caption">
+                    <p> <%= post.imagetext %> </p>
+                </div>
+            </div>
+
+            <% }) %>
+
+</body>
+
+</html

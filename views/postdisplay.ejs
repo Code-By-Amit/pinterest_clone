@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post</title>
+  <link rel="stylesheet" href="/stylesheets/postdisplay.css">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="buttoncont">
+    <a href="/feed" class="button">Go Back</a>
+  </div>
+ 
+
+    <div class="post-container">
+      <!-- Single Post Card -->
+      <div class="post-card-horizontal">
+
+        <!-- Post Image on the left -->
+        <div class="post-image">
+          <img src="/images/uploads/<%=post.image%>" alt="Post Image">
+        </div>
+
+        <!-- Post Details on the right -->
+        <div class="post-details">
+
+          <!-- User info -->
+          <div class="post-header">
+            <div class="user-avatar">
+              <img src="/images/profile.jpg" alt="user avatar">
+            </div>
+            <div class="user-info">
+              <p class="username">
+                <%= user.fullname %>
+              </p>
+              <p class="email">
+                <%= user.email %>
+              </p>
+            </div>
+          </div>
+
+          <!-- Caption -->
+          <div class="post-caption">
+            <p>
+              <%= post.imagetext %>
+            </p>
+          </div>
+
+          <!-- Likes and Comments Buttons -->
+          <div class="post-actions">
+            <button class="like-btn">
+              <i class="fas fa-heart"></i> Like (<span class="like-count">
+                <%=post.likes%>
+              </span>)
+            </button>
+            <button class="comment-btn">
+              <i class="fas fa-comment"></i> Comment
+            </button>
+          </div>
+
+          <!-- Comments Section -->
+          <div class="post-comments">
+            <div class="comment">
+              <span class="comment-user">Alice</span> Loved this place too!
+            </div>
+            <div class="comment">
+              <span class="comment-user">Bob</span> Wow, stunning photo!
+            </div>
+          </div>
+
+          <!-- Add Comment -->
+          <div class="add-comment">
+            <input type="text" placeholder="Add a comment..." class="comment-input">
+            <button class="comment-submit-btn">Post</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+ 
+</body>
+
+</html>
