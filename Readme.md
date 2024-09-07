@@ -29,7 +29,7 @@ A Pinterest-like web application where users can create accounts, authenticate, 
 
 ## Technologies Used
 
-- HTML, CSS 
+- HTML(ejs), CSS 
 - Node.js
 - Express
 - MongoDB
