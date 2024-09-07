@@ -17,8 +17,7 @@ A Pinterest-like web application where users can create accounts, authenticate, 
 3. [Installation](#installation)
 4. [Usage](#usage)
 5. [Contributing](#contributing)
-6. [License](#license)
-7. [Contact](#contact)
+
 
 ## Features
 
