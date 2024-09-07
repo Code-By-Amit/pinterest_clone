@@ -2,6 +2,8 @@
 
 A Pinterest-like web application where users can create accounts, authenticate, upload posts, and view posts with user details on the feed.
 
+![Profile Image]()
+
 ## Table of Contents
 
 1. [Features](#features)
