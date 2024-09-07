@@ -2,7 +2,13 @@
 
 A Pinterest-like web application where users can create accounts, authenticate, upload posts, and view posts with user details on the feed.
 
-![Profile Image]()
+## Profile Page
+
+![Profile Image](https://github.com/Code-By-Amit/pinterest_clone/blob/main/public/images/Profile%20page.png)
+
+## Feed Page
+
+![Profile Image](https://github.com/Code-By-Amit/pinterest_clone/blob/main/public/images/Feed%20Page.png)
 
 ## Table of Contents
 
